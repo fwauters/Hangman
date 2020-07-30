@@ -1,0 +1,40 @@
+body main #gameInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #gameInfo #gameCanvas {
+  background-color: purple;
+}
+
+body main #gameInfo aside {
+  background-color: yellow;
+  height: 200px;
+  width: 100px;
+  margin-left: 6px;
+}
+
+body main #wordBlock {
+  background-color: red;
+  height: 10vh;
+  width: 100vw;
+}
+
+body main #keyboard .btn {
+  width: 10vw;
+  height: 10vw;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+body main #keyboard .rowOf6 {
+  margin-left: 28px;
+}
+/*# sourceMappingURL=game.css.map */

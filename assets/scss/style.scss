@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+
+    header {
+        height: 10vh;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: white;
+        }
+    }
+
+    main {
+        height: 85vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;   
+        justify-content: space-evenly;
+        align-items: center;      
+    }
+
+    footer {
+        height: 5vh;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: white;
+        }
+    }
+}

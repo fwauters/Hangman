@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/game.css">
+
+    <title>Hangman</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Hangman</a></h1>
+    </header>
+
+    <main>
+        <section id="gameInfo">
+            <canvas id="gameCanvas" width="200px" height="200px"></canvas>
+            <aside>
+
+            </aside>
+        </section>
+        <section id="wordBlock">
+           <div>
+
+           </div>
+        </section>
+        <section id="keyboard">
+            <div class="rowOf7">
+                <button type= "button" class="btn" id="btnA">A</button>
+                <button type= "button" class="btn" id="btnB">B</button>
+                <button type= "button" class="btn" id="btnC">C</button>
+                <button type= "button" class="btn" id="btnD">D</button>
+                <button type= "button" class="btn" id="btnE">E</button>
+                <button type= "button" class="btn" id="btnF">F</button>
+                <button type= "button" class="btn" id="btnG">G</button>
+            </div>
+            <div class="rowOf6">
+                <button type= "button" class="btn" id="btnH">H</button>
+                <button type= "button" class="btn" id="btnI">I</button>
+                <button type= "button" class="btn" id="btnJ">J</button>
+                <button type= "button" class="btn" id="btnK">K</button>
+                <button type= "button" class="btn" id="btnL">L</button>
+                <button type= "button" class="btn" id="btnM">M</button>
+            </div>
+            <div class="rowOf7">
+                <button type= "button" class="btn" id="btnN">N</button>
+                <button type= "button" class="btn" id="btnO">O</button>
+                <button type= "button" class="btn" id="btnP">P</button>
+                <button type= "button" class="btn" id="btnQ">Q</button>
+                <button type= "button" class="btn" id="btnR">R</button>
+                <button type= "button" class="btn" id="btnS">S</button>
+                <button type= "button" class="btn" id="btnT">T</button>
+            </div>
+            <div class="rowOf6">
+                <button type= "button" class="btn" id="btnU">U</button>
+                <button type= "button" class="btn" id="btnV">V</button>
+                <button type= "button" class="btn" id="btnW">W</button>
+                <button type= "button" class="btn" id="btnX">X</button>
+                <button type= "button" class="btn" id="btnY">Y</button>
+                <button type= "button" class="btn" id="btnZ">Z</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; François Wauters - BeCode 2020</p>
+    </footer>
+
+    <script src="assets/js/hangman.js"></script>
+</body>
+</html>

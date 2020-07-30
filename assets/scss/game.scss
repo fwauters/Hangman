@@ -1,0 +1,37 @@
+ body {   
+    main {
+        #gameInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #gameCanvas {
+                background-color: purple;
+            }
+            aside {
+                background-color: yellow;
+                height: 200px;
+                width: 100px;
+                margin-left: 6px;
+            }
+        }
+
+        #wordBlock {
+            background-color: red;
+            height: 10vh;
+            width: 100vw;
+        }
+
+        #keyboard {
+            .btn {
+                width: 10vw;
+                height: 10vw;
+                margin: 1px;
+                border-radius: 5px;
+            }
+            .rowOf6 {
+                margin-left: 28px;
+            }
+        }
+    }
+}
