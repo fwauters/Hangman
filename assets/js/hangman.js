@@ -7,15 +7,19 @@
                 window.location.replace("./game.html");
                 console.log(difficulty);
             }
-            if ($btn.id === "btnNormal") {
+            else if ($btn.id === "btnNormal") {
                 let difficulty = "normal";
                 window.location.replace("./game.html");
                 console.log(difficulty);
             }
-            if ($btn.id === "btnHard") {
+            else if ($btn.id === "btnHard") {
                 let difficulty = "hard";
                 window.location.replace("./game.html");
                 console.log(difficulty);
+            }
+            else {
+                let letter = $btn.id;
+                console.log(letter);
             }
         }
     ));
