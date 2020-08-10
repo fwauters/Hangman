@@ -15,7 +15,7 @@
     for (let i = 0; i < numberOfLetters; i++) {
         let p = document.createElement("p");
         p.id = "l" + (i+1);
-        p.innerText = "_" + (i+1);
+        p.innerText = "__";
         document.getElementById("wordBlock").appendChild(p);
     }
 
@@ -159,7 +159,7 @@
                     document.getElementById("l" + (j+1)).innerText = letter;
                     letterFound++;
                     if (letterFound === numberOfLetters) {
-                        alert("Congratulation, you win!");
+                        alert("Congratulation, you win");
                         window.location.href = "./index.html";
                     }
                 }
