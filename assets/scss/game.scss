@@ -6,7 +6,8 @@
             align-items: center;
 
             #gameCanvas {
-                background-color: purple;
+                background-color: white;
+                border: solid black 2px;
             }
             aside {
                 background-color: yellow;
@@ -20,6 +21,15 @@
             background-color: red;
             height: 10vh;
             width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            p {
+                background-color: white;
+                width: 25px;
+                height: 25px;
+            }
         }
 
         #keyboard {

@@ -11,7 +11,8 @@ body main #gameInfo {
 }
 
 body main #gameInfo #gameCanvas {
-  background-color: purple;
+  background-color: white;
+  border: solid black 2px;
 }
 
 body main #gameInfo aside {
@@ -25,6 +26,21 @@ body main #wordBlock {
   background-color: red;
   height: 10vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #wordBlock p {
+  background-color: white;
+  width: 25px;
+  height: 25px;
 }
 
 body main #keyboard .btn {
