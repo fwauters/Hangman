@@ -7,10 +7,21 @@
 
 body {
   background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body header {
   height: 10vh;
+  width: 100vw;
   background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +40,7 @@ body header h1 {
 
 body main {
   height: 85vh;
+  width: 100vw;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +59,7 @@ body main {
 
 body footer {
   height: 5vh;
+  width: 100vw;
   background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,5 +75,11 @@ body footer {
 body footer p {
   color: white;
   font-size: 0.8rem;
+}
+
+@media (min-width: 540px) {
+  main {
+    width: 540px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

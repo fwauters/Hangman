@@ -53,4 +53,10 @@ body main #keyboard .btn {
 body main #keyboard .rowOf6 {
   margin-left: 28px;
 }
+
+@media (min-width: 540px) {
+  #wordBlock {
+    width: 540px;
+  }
+}
 /*# sourceMappingURL=game.css.map */
