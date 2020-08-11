@@ -15,7 +15,7 @@
     for (let i = 0; i < numberOfLetters; i++) {
         let p = document.createElement("p");
         p.id = "l" + (i+1);
-        p.innerText = "__";
+        p.innerText = "_";
         document.getElementById("wordBlock").appendChild(p);
     }
 
@@ -143,6 +143,13 @@
     let errorNb = 0;
     let letterFound = 0;
 
+    //---- Set ingame infos ----
+
+    document.getElementById("infos").innerHTML = 
+        "You have to guess a word of " + numberOfLetters + " letters in English with 5 chances, the 6th error will hang you.";
+    document.getElementById("trial").innerText = "Trial(s) : " + trialNb;
+    document.getElementById("error").innerText = "Error(s) : " + errorNb;
+
     //---- Check buttons ----
 
     Array.from(document.querySelectorAll("button.btn")).forEach($btn =>
@@ -151,7 +158,6 @@
             let letter = $btn.id;
             trialNb++;
             console.log("trial nb " + trialNb);
-
             let e = 0;
             for (let j = 0; j < randomWord.length; j++) {
                 if (letter === randomWord.charAt(j)) {
@@ -159,7 +165,7 @@
                     document.getElementById("l" + (j+1)).innerText = letter;
                     letterFound++;
                     if (letterFound === numberOfLetters) {
-                        alert("Congratulation, you win");
+                        alert("Congratulation, you win!\r\nTrial(s) : " + trialNb + ", Error(s) : " + errorNb);
                         window.location.href = "./index.html";
                     }
                 }
@@ -180,11 +186,18 @@
                     case 5 : drawRope(ctx);
                         break;
                     case 6 : removeStool(ctx);
-                        alert("Sorry, you loose.");
-                        window.location.href = "./index.html";
+                        document.querySelectorAll("button.btn").forEach($btn => {
+                            $btn.disabled = true;
+                        });
+                        setTimeout(() => {
+                            alert("Sorry, you loose.");
+                            window.location.href = "./index.html";
+                        }, 2000);    
                         break;
                 }
             }
+            document.getElementById("trial").innerText = "Trial(s) : " + trialNb;
+            document.getElementById("error").innerText = "Error(s) : " + errorNb;
         }
     ));
 

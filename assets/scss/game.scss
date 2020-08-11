@@ -1,24 +1,39 @@
- body {   
+ body {
+    header {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
     main {
-        #gameInfo {
+        #gameBlock {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-evenly;
 
             #gameCanvas {
                 background-color: white;
                 border: solid black 2px;
             }
-            aside {
-                background-color: yellow;
+            #gameInfos {
                 height: 200px;
                 width: 100px;
                 margin-left: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Patrick Hand', cursive;
+                text-align: center;
+                
+                #infos {
+                    font-size: 0.8rem;
+                    margin-bottom: 40px;
+                }
             }
         }
 
         #wordBlock {
-            background-color: white;
+            background-color: #313848;
             height: 10vh;
             width: 100vw;
             display: flex;
@@ -26,9 +41,12 @@
             align-items: center;
 
             p {
-                font-size: 1.5rem;
+                font-family: 'Patrick Hand', cursive;
+                color: white;
+                font-size: 2.2rem;
                 width: 25px;
                 height: 25px;
+                margin-bottom: 25px;
             }
         }
 
@@ -38,6 +56,8 @@
                 height: 35px;
                 margin: 1px;
                 border-radius: 5px;
+                font-family: 'Patrick Hand', cursive;
+                font-size: 1.2rem;
             }
             .rowOf6 {
                 margin-left: 28px;
@@ -47,7 +67,33 @@
 }
 
 @media (min-width: 540px) {
-    #wordBlock {
-        width: 540px;          
+    main {
+        #gameBlock {
+            #gameInfos {
+                min-width: 200px;
+                margin-left: 50px !important;
+                font-size: 1.5rem;
+
+                #infos {
+                    font-size: 1.2rem !important;
+                    margin-bottom: 20px !important;
+                }
+            }
+        }
+        #wordBlock {
+            max-width: 540px;
+
+            p {
+                font-size: 3rem !important;
+                margin-bottom: 45px !important;
+            }
+        }
+        #keyboard {
+            .btn {
+                font-size: 2rem !important;
+                min-width: 50px;
+                min-height: 50px;
+            }
+        }
     }
 }

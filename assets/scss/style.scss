@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #313848;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +13,14 @@ body {
     header {
         height: 10vh;
         width: 100vw;
-        background-color: green;
+        background-color: #313848;
         display: flex;
         justify-content: center;
         align-items: center;
 
         h1 {
+            font-family: 'Gochi Hand', cursive;
+            font-size: 3rem;
             color: white;
         }
     }
@@ -26,7 +28,7 @@ body {
     main {
         height: 85vh;
         width: 100vw;
-        background-color: white;
+        background-color: #b2b6bc;
         display: flex;
         flex-direction: column;   
         justify-content: space-evenly;
@@ -36,20 +38,35 @@ body {
     footer {
         height: 5vh;
         width: 100vw;
-        background-color: blue;
+        background-color: #313848;
         display: flex;
         justify-content: center;
         align-items: center;
 
         p {
+            font-family: 'Patrick Hand', cursive;
             color: white;
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
 }
 
 @media (min-width: 540px) {
     main {
-        width: 540px;
+        max-width: 540px;
+        border-radius: 15px;
+    }
+    footer {
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+}
+
+@media (min-height: 700px) {
+    header {
+        h1 {
+            font-size: 4rem !important;
+        }
     }
 }

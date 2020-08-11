@@ -1,9 +1,9 @@
 # Hangman
 
-Work in progress
-
 My version of the Hangman game in Javascript
+
+Minimum working resolution = 300x480 px
 
 Accessible [here](https://fwauters.github.io/Hangman/)
 
-**design in 320x480 px for now, real style coming soon**
+It's an exercise I made for BeCode
