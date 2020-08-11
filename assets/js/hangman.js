@@ -190,7 +190,7 @@
                             $btn.disabled = true;
                         });
                         setTimeout(() => {
-                            alert("Sorry, you loose.");
+                            alert("Sorry, you loose.\r\nThe word was " + randomWord + ".");
                             window.location.href = "./index.html";
                         }, 2000);    
                         break;
