@@ -146,7 +146,7 @@
     //---- Set ingame infos ----
 
     document.getElementById("infos").innerHTML = 
-        "You have to guess a word of " + numberOfLetters + " letters in English with 5 chances, the 6th error will hang you.";
+        "You have to guess a " + numberOfLetters + " letter word in English with 5 chances, the 6th error will hang you.";
     document.getElementById("trial").innerText = "Trial(s) : " + trialNb;
     document.getElementById("error").innerText = "Error(s) : " + errorNb;
 
