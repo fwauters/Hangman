@@ -165,7 +165,7 @@
                     document.getElementById("l" + (j+1)).innerText = letter;
                     letterFound++;
                     if (letterFound === numberOfLetters) {
-                        alert("Congratulation, you win!\r\nTrial(s) : " + trialNb + ", Error(s) : " + errorNb);
+                        alert("Congratulation, you win!\r\nYou made " + errorNb + " error(s).");
                         window.location.href = "./index.html";
                     }
                 }
